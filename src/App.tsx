@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import 'antd/dist/antd.css'
+import './App.scss'
 import * as React from 'react';
+import { Layout } from 'antd'
+import Headers from './components/header/headers'
+import Contents from './components/content/contents'
+
+const { Header, Footer, Content } = Layout;
 
 class App extends React.Component<{}, {}> {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p><a href="https://github.com/LucaslEliane/ts-react">ts-react-demo</a></p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Layout>
+          <Header>
+            <Headers />
+          </Header>
+          <Content>
+            <Contents />
+          </Content>
+          <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+        </Layout>
       </div>
     )
   }

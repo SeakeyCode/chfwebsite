@@ -1,5 +1,16 @@
 .App {
-  text-align: center;
+  
+}
+
+.ant-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.ant-layout-header {
+  background: #fff;
+  height: 60px;
+  border-bottom: 1px solid #eee;
+  padding: 0;
 }
 
 .App-logo {
@@ -14,7 +25,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  // background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
